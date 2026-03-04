@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oishe Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Montserrat:wght@600&family=Mr+De+Haviland&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="whatsapp-button" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Project</a>
+        <a href="#writing" class="nav-link">Writing</a>
+        <button class="hire-btn" onclick="location.href='#hire'">Hire Me</button>
+    </div>
+    <div class="nav-divider"></div>
+    <div class="nav-settings" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="section">
+    <div class="portfolio-container">
+        <div class="line"></div>
+
+        <div class="center-stage">
+            <div class="signature">Rubida Islam Oishe</div>
+
+            <h1 class="big-text">
+                <span class="left-text">PORT</span>
+                <div class="spacer"></div>
+                <span class="right-text">FOLIO</span>
+            </h1>
+
+            <div class="subtitle">Software Developer</div>
+
+            <div class="character-wrapper">
+                <img src="images/Me.png" alt="Oishe Character" class="character-img">
+            </div>
+        </div>
+
+        <div class="line"></div>
+    </div>
+
+    <!-- NEW: Bottom Content Section -->
+    <div class="home-bottom-content">
+        <!-- Available Badge -->
+        <div class="available-badge">
+            <span class="dot"></span>
+            Available for 2026
+        </div>
+
+        <!-- Tagline -->
+        <p class="home-tagline">
+            Transforming complex ideas into high-performance aesthetically pleasing and interactive softwares.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="home-actions">
+            <button class="see-work-btn">See my work</button>
+            <button class="scroll-down-btn">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section">
+    <h1 class="about-heading">About Me</h1>
+    
+    <div class="about-cards-container">
+        <!-- Image Card (Spans 2 rows) -->
+        <div class="about-image-card">
+            <img src="images/about-me.jpeg" alt="Oishe" class="about-image" id="aboutImage">
+            <div class="image-upload-overlay">
+                <label for="aboutImageUpload" class="upload-label">
+                    <i class="fas fa-camera"></i>
+                    <span>Change Photo</span>
+                </label>
+                <input type="file" id="aboutImageUpload" accept="image/*" style="display: none;">
+            </div>
+        </div>
+
+        <!-- Card 1: Who I Am -->
+        <div class="about-card">
+            <div class="card-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <h3 class="card-title">Who I Am</h3>
+            <p class="card-text">
+                I'm Oishe — a software developer who loves clean UI, meaningful code, 
+                and turning ideas into things that actually work.
+            </p>
+        </div>
+
+        <!-- Card 2: What I Study -->
+        <div class="about-card">
+            <div class="card-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="card-title">What I Study</h3>
+            <p class="card-text">
+                Currently pursuing Computer Science, diving deep into software engineering, 
+                web development, and exploring the intersection of design and technology.
+            </p>
+        </div>
+
+        <!-- Card 3: What I Love -->
+        <div class="about-card">
+            <div class="card-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="card-title">What I Love</h3>
+            <p class="card-text">
+                Building beautiful interfaces, solving complex problems, and creating 
+                seamless user experiences that make a difference.
+            </p>
+        </div>
+
+        <!-- Card 4: Goals -->
+        <div class="about-card">
+            <div class="card-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="card-title">Goals</h3>
+            <p class="card-text">
+                Continuously learning, growing as a developer, and contributing to projects 
+                that combine innovation with purpose and impact.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section skills-section">
+    <h1 class="section-heading">Skills</h1>
+    
+    <div class="skills-container">
+        <!-- Skill Card 1 -->
+        <div class="skill-card">
+            <div class="skill-percentage">75%</div>
+            <h3 class="skill-name">Web Development</h3>
+            <p class="skill-description">
+                Expert in building responsive, modern web applications using HTML, CSS, JavaScript, 
+                React, and various frontend frameworks.
+            </p>
+        </div>
+
+        <!-- Skill Card 2 -->
+        <div class="skill-card">
+            <div class="skill-percentage">85%</div>
+            <h3 class="skill-name">UI/UX Design</h3>
+            <p class="skill-description">
+                Creating intuitive, user-centered designs with tools like Figma, Adobe XD, 
+                focusing on aesthetics and usability.
+            </p>
+        </div>
+
+
+        <!-- Skill Card 4 -->
+        <div class="skill-card">
+            <div class="skill-percentage">90%</div>
+            <h3 class="skill-name">Mobile Development</h3>
+            <p class="skill-description">
+                Developing cross-platform mobile applications using React Native and Flutter 
+                for iOS and Android.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="section experience-section">
+    <h1 class="section-heading">Experience</h1>
+    
+    <div class="experience-container">
+        <!-- EDUCATION COLUMN -->
+        <div class="experience-column">
+            <h2 class="column-title">
+                <i class="fas fa-graduation-cap"></i>
+                Education
+            </h2>
+            <div class="timeline">
+                <!-- Education Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Bachelor of Science</h3>
+                            <span class="experience-year">2021 - 2025</span>
+                        </div>
+                        <h4 class="experience-company">Computer Science</h4>
+                        <p class="experience-description">
+                            Pursuing Computer Science with focus on software engineering, 
+                            web development, and modern programming paradigms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Higher Secondary</h3>
+                            <span class="experience-year">2019 - 2021</span>
+                        </div>
+                        <h4 class="experience-company">Science</h4>
+                        <p class="experience-description">
+                            Completed higher secondary education with specialization in Science, 
+                            building foundation in mathematics and logical thinking.
+                        </p>
+                    </div>
+                </div>
+                 <!-- Education Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">SSC</h3>
+                            <span class="experience-year">2017 - 2018</span>
+                        </div>
+                        <h4 class="experience-company">Science</h4>
+                        <p class="experience-description">
+                            Completed higher secondary education with specialization in Science, 
+                            building foundation in mathematics and logical thinking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WORK EXPERIENCE COLUMN -->
+        <div class="experience-column">
+            <h2 class="column-title">
+                <i class="fas fa-briefcase"></i>
+                Experience
+            </h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Software Developer</h3>
+                            <span class="experience-year">2024</span>
+                        </div>
+                        <h4 class="experience-company"></h4>
+                        <p class="experience-description">
+                            Individually developed a SaaS-based application as part of a university course project, implementing a micro-frontend architecture and improving application loading performance by 40%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Designer UI/UX</h3>
+                            <span class="experience-year">2021 - 2023</span>
+                        </div>
+                        <h4 class="experience-company"></h4>
+                        <p class="experience-description">
+                            Designed user interfaces and experiences for web and mobile applications. 
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Web Developer</h3>
+                            <span class="experience-year">2025- 2026</span>
+                        </div>
+                        <h4 class="experience-company"></h4>
+                        <p class="experience-description">
+                            Developed and maintained responsive websites and web applications. 
+                            Focused on performance optimization and modern web standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section">
+    <h1 class="section-heading">Projects</h1>
+    
+    <!-- Filter Buttons -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+        <!-- Web Project 1 -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="images/project1.png" alt="Project 1" class="project-img">
+                <div class="project-overlay">
+                    <h3>E-Commerce Platform</h3>
+                    <p>VS Code • React • Node.js • MongoDB</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project1Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project1Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Project 2 -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                <div class="project-overlay">
+                    <h3>Portfolio Website</h3>
+                    <p>VS Code • HTML • CSS • JavaScript</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project2Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project2Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Project 1 -->
+        <div class="project-card" data-category="mobile">
+            <div class="project-image">
+                <img src="images/project3.jpg" alt="Project 3" class="project-img">
+                <div class="project-overlay">
+                    <h3>Kids Learning App</h3>
+                    <p>Figma • Android Studio</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project3Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project3Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Project 3 -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="images/project4.jpg" alt="Project 4" class="project-img">
+                <div class="project-overlay">
+                    <h3>Dashboard Analytics</h3>
+                    <p>VS Code • Vue.js • D3.js • Express</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project4Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project4Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Project 2 -->
+        <div class="project-card" data-category="mobile">
+            <div class="project-image">
+                <img src="images/project5.jpg" alt="Project 5" class="project-img">
+                <div class="project-overlay">
+                    <h3>Agricultural App</h3>
+                    <p>Figma • Android Studio</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project5Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project5Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Project 4 -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="images/project6.jpg" alt="Project 6" class="project-img">
+                <div class="project-overlay">
+                    <h3>Social Media App</h3>
+                    <p>VS Code • React • GraphQL • PostgreSQL</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project6Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project6Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Project 3 -->
+        <div class="project-card" data-category="mobile">
+            <div class="project-image">
+                <img src="images/project7.jpg" alt="Project 7" class="project-img">
+                <div class="project-overlay">
+                    <h3>Food Delivery App</h3>
+                    <p>Figma • Android Studio</p>
+                </div>
+                <div class="image-upload-overlay">
+                    <label for="project5Upload" class="upload-label-small">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="project5Upload" class="project-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- WRITING SECTION -->
+<section id="writing" class="section writing-section">
+    <h1 class="section-heading">Writing</h1>
+    
+    <div class="writing-scroll-container">
+        <div class="writing-cards">
+            <!-- Writing Card 1 -->
+            <div class="writing-card">
+                <div class="writing-image">
+                    <img src="images/paper1.jpeg" alt="Research Paper 1" class="writing-img">
+                    <div class="image-upload-overlay">
+                        <label for="paper1Upload" class="upload-label-small">
+                            <i class="fas fa-camera"></i>
+                        </label>
+                        <input type="file" id="paper1Upload" class="writing-upload" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+                <h3 class="writing-title">PostVac: A Dataset of Self-Reported Symptoms Following COVID-19 Vaccination in Bangladesh</h3>
+                <p class="writing-date">2026</p>
+            </div>
+    </div>
+</section>
+
+<!-- HIRE ME SECTION -->
+<section id="hire" class="section hire-section">
+    <div class="hire-container">
+        <div class="hire-left">
+            <h1 class="hire-heading">
+                Let's build something 
+                <span class="highlight-text">amazing.</span><br>
+                <span class="legendary-text">Legendary.</span>
+            </h1>
+            <p class="hire-subtext">
+                Whether you have a project in mind or just want to say hello, 
+                my inbox is always open.
+            </p>
+            <div class="hire-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>rubidaoishe@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bangladesh</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hire-right">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/rubida-oishe-a7ab94378" target="_blank" class="footer-link">LinkedIn</a>
+            <a href="https://www.instagram.com/fuzzy.fatty.wuzzy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="footer-link">Instagram</a>
+            <a href="https://github.com/TheSpaceOfRiri" target="_blank" class="footer-link">GitHub</a>
+        </div>
+        <div class="footer-copyright">
+            © 2026 Rubida Islam Oishe. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Active nav link on scroll
+    const sections = document.querySelectorAll(".section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+        });
+    });
+
+    // Smooth scroll for "See my work" button
+    document.querySelector('.see-work-btn').addEventListener('click', () => {
+        document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Smooth scroll for down arrow button
+    document.querySelector('.scroll-down-btn').addEventListener('click', () => {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Theme Toggle (Dark/Light Mode)
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
+
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    // Project Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 10);
+                } else {
+                    if (card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => card.style.opacity = '1', 10);
+                    } else {
+                        card.style.opacity = '0';
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                }
+            });
+        });
+    });
+
+    // Image Upload Handlers
+    // About Image Upload
+    document.getElementById('aboutImageUpload').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                document.getElementById('aboutImage').src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Project Images Upload
+    const projectUploads = document.querySelectorAll('.project-upload');
+    projectUploads.forEach((upload, index) => {
+        upload.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = upload.closest('.project-image').querySelector('.project-img');
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    // Writing Images Upload
+    const writingUploads = document.querySelectorAll('.writing-upload');
+    writingUploads.forEach((upload, index) => {
+        upload.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = upload.closest('.writing-image').querySelector('.writing-img');
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
