@@ -250,7 +250,7 @@ body.dark-mode #hire {
     font-size: clamp(3rem, 7vw, 6rem);
     position: absolute;
     top: -80px;
-    left: -80px;
+    left: -89px;
     z-index: 10;
     transform: rotate(0deg);
 }
@@ -263,13 +263,13 @@ body.dark-mode #hire {
     position: absolute;
     top: -15px;
     right: 15px;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 .character-wrapper {
     position: absolute;
-    left: 50%;
+    left: 48%;
     bottom: 0px;
     transform: translateX(-50%);
     z-index: 5;
@@ -277,39 +277,17 @@ body.dark-mode #hire {
 
 .character-img {
     display: block;
-    height: 25rem;
+    height: 26rem;
     width: auto;
+    
 }
 
 .home-bottom-content {
     position: absolute;
-    bottom: 80px;
+    bottom: -170px;
     text-align: center;
     max-width: 600px;
     padding: 0 20px;
-}
-
-/* Available Badge */
-.available-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #fff;
-    color: #5a4635;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.available-badge .dot {
-    width: 8px;
-    height: 8px;
-    background-color: #4caf50;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
